@@ -1,0 +1,68 @@
+:root {
+  /* colors */
+  --galactic-blue: #755cde;
+  --summer-yellow: #f6a560;
+  --light-pink: #f39e9e;
+  --light-red: #eb7565;
+  --cyan: #61c4b7;
+  --plum: #552049;
+  /* text */
+  --black: #030303;
+  --medium-brown: #7a746e;
+  /* body bg */
+  --light-cream: #fff7f0;
+}
+
+body {
+  background-color: var(--light-cream);
+}
+
+p {
+  color: var(--medium-brown);
+}
+
+/* Buttons */
+.btn {
+  color: var(--light-cream);
+}
+.btn-black {
+  background-color: var(--black);
+}
+.btn-red {
+  background-color: var(--light-red);
+}
+
+button {
+  color: var(--light-cream);
+}
+
+/* Skills Blocks */
+#skill-1 {
+  background-color: var(--galactic-blue);
+}
+#skill-2 {
+  background-color: var(--summer-yellow);
+}
+#skill-3 {
+  background-color: var(--light-pink);
+}
+#skill-4 {
+  background-color: var(--light-red);
+}
+#skill-5 {
+  background-color: var(--cyan);
+}
+#skill-6 {
+  background-color: var(--plum);
+}
+
+/* Booking */
+#booking-div {
+  background-color: var(--black);
+}
+#booking-div > h2 {
+  color: var(--light-cream);
+}
+#booking-div > p {
+  color: var(--light-cream);
+}
