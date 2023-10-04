@@ -1,3 +1,5 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap"); */
+
 :root {
   /* colors */
   --galactic-blue: #755cde;
@@ -15,15 +17,26 @@
 
 body {
   background-color: var(--light-cream);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
 }
 
+/* Typography */
 p {
   color: var(--medium-brown);
 }
 
+/* Site Logo */
+img.site-logo {
+  width: 3rem;
+}
+
 /* Buttons */
 .btn {
+  height: 2.75rem;
   color: var(--light-cream);
+  font-size: 14px;
+  font-weight: bold;
 }
 .btn-black {
   background-color: var(--black);
@@ -32,11 +45,20 @@ p {
   background-color: var(--light-red);
 }
 
-button {
-  color: var(--light-cream);
+/* Header */
+header > h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+header > p {
+  line-height: 26px;
 }
 
 /* Skills Blocks */
+.skill-div > h2 {
+  font-size: 24px;
+  height: 5rem;
+}
 #skill-1 {
   background-color: var(--galactic-blue);
 }
