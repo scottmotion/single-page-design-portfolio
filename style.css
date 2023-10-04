@@ -121,6 +121,10 @@ header > p {
   text-align: center;
   padding: 1rem;
 }
+img.about-image {
+  width: 100%;
+  max-width: 300px;
+}
 
 /* Work */
 #work-section {
@@ -129,6 +133,26 @@ header > p {
 }
 #work-section > h2 {
   padding-inline: 1rem;
+}
+
+/* Work Carousel */
+.carousel-control-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  position: relative;
+  width: unset;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: var(--black);
+  border-radius: 50rem;
+  position: relative;
 }
 
 /* Booking Section */
