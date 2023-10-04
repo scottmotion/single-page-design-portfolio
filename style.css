@@ -82,23 +82,26 @@ header > p {
 
 /* Skills Section */
 #skills-section {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 22.75rem repeat(4, 11.375rem);
   gap: 1rem;
 }
 .skill-div {
-  height: 5rem;
   display: flex;
   flex-direction: row;
+  align-items: end;
   padding: 1rem;
   color: white;
   border-radius: 0.5rem;
 }
 .skill-div > h2 {
   font-size: 24px;
+  font-weight: 700;
 }
 #skill-1 {
   background-color: var(--galactic-blue);
+  grid-column-end: span 2;
 }
 #skill-2 {
   background-color: var(--summer-yellow);
@@ -108,12 +111,15 @@ header > p {
 }
 #skill-4 {
   background-color: var(--light-red);
+  grid-column-end: span 2;
 }
 #skill-5 {
   background-color: var(--cyan);
+  grid-column-end: span 2;
 }
 #skill-6 {
   background-color: var(--plum);
+  grid-column-end: span 2;
 }
 
 /* About Section */
