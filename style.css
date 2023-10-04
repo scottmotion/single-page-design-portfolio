@@ -94,6 +94,12 @@ header > p {
   padding: 1rem;
   color: white;
   border-radius: 0.5rem;
+  position: relative;
+}
+.skill-image {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 .skill-div > h2 {
   font-size: 24px;
@@ -142,6 +148,14 @@ img.about-image {
 }
 
 /* Work Carousel */
+
+.carousel-item {
+  /* width: 75%; */
+  padding-inline: 1rem;
+}
+.carousel-item > img {
+  border-radius: 0.5rem;
+}
 .carousel-control-wrapper {
   display: flex;
   flex-direction: row;
