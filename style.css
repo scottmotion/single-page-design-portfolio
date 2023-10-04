@@ -25,6 +25,9 @@ body {
 p {
   color: var(--medium-brown);
 }
+/**************/
+/* COMPONENTS */
+/**************/
 
 /* Site Logo */
 img.site-logo {
@@ -37,6 +40,7 @@ img.site-logo {
   color: var(--light-cream);
   font-size: 14px;
   font-weight: bold;
+  border-radius: 50rem;
 }
 .btn-black {
   background-color: var(--black);
@@ -45,7 +49,29 @@ img.site-logo {
   background-color: var(--light-red);
 }
 
+/************/
+/* SECTIONS */
+/************/
+
+section {
+  padding: 1rem;
+}
+
+/* Nav / Footer */
+nav,
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
 /* Header */
+header {
+  text-align: center;
+  padding: 1rem;
+}
 header > h1 {
   font-size: 36px;
   font-weight: 700;
@@ -54,10 +80,22 @@ header > p {
   line-height: 26px;
 }
 
-/* Skills Blocks */
+/* Skills Section */
+#skills-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.skill-div {
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  color: white;
+  border-radius: 0.5rem;
+}
 .skill-div > h2 {
   font-size: 24px;
-  height: 5rem;
 }
 #skill-1 {
   background-color: var(--galactic-blue);
@@ -78,9 +116,29 @@ header > p {
   background-color: var(--plum);
 }
 
-/* Booking */
+/* About Section */
+#about-section {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Work */
+#work-section {
+  text-align: center;
+  padding-inline: 0px;
+}
+#work-section > h2 {
+  padding-inline: 1rem;
+}
+
+/* Booking Section */
+#booking-section {
+  text-align: center;
+}
 #booking-div {
   background-color: var(--black);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
 }
 #booking-div > h2 {
   color: var(--light-cream);
