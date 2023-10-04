@@ -1,0 +1,22 @@
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ignore the design files
+design/
+
+# ignores all .md files
+*.md
+
+# does not ignore the README.md file
+!README.md
+
+# ignore old file versions
+old/
