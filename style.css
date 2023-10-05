@@ -24,6 +24,7 @@ body {
 /* Typography */
 p {
   color: var(--medium-brown);
+  line-height: 26px;
 }
 /**************/
 /* COMPONENTS */
@@ -41,6 +42,7 @@ img.site-logo {
   font-size: 14px;
   font-weight: bold;
   border-radius: 50rem;
+  padding-inline: 1.75rem;
 }
 .btn-black {
   background-color: var(--black);
@@ -69,41 +71,48 @@ footer {
 
 /* Header */
 header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 1rem;
 }
 header > h1 {
   font-size: 36px;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 header > p {
-  line-height: 26px;
+  max-width: 80%;
+  margin-bottom: 0px;
 }
 
 /* Skills Section */
 #skills-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 22.75rem repeat(4, 11.375rem);
-  gap: 1rem;
+  grid-template-rows: 22.75rem 11.375rem 9.875rem 11.375rem 11.375rem;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
 }
 .skill-div {
   display: flex;
   flex-direction: row;
   align-items: end;
-  padding: 1rem;
+  padding: 1.5rem;
   color: white;
   border-radius: 0.5rem;
   position: relative;
 }
 .skill-image {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 .skill-div > h2 {
   font-size: 24px;
   font-weight: 700;
+  margin: 0;
 }
 #skill-1 {
   background-color: var(--galactic-blue);
@@ -132,19 +141,30 @@ header > p {
 #about-section {
   text-align: center;
   padding: 1rem;
+  margin-bottom: 4rem;
 }
 img.about-image {
   width: 100%;
   max-width: 300px;
+  margin-bottom: 2.5rem;
+}
+#about-section > h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
 /* Work */
 #work-section {
   text-align: center;
   padding-inline: 0px;
+  margin-bottom: 4rem;
 }
 #work-section > h2 {
+  font-size: 24;
+  font-weight: 700;
   padding-inline: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* Work Carousel */
@@ -178,15 +198,20 @@ img.about-image {
 /* Booking Section */
 #booking-section {
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 #booking-div {
   background-color: var(--black);
   padding: 1.5rem;
+  padding-block: 3rem;
   border-radius: 0.5rem;
 }
 #booking-div > h2 {
   color: var(--light-cream);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 #booking-div > p {
   color: var(--light-cream);
+  margin-bottom: 1.5rem;
 }
