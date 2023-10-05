@@ -41,6 +41,8 @@ img.site-logo {
 /* Buttons */
 .btn {
   height: 2.75rem;
+  max-width: fit-content;
+  white-space: nowrap;
   color: var(--light-cream);
   font-size: 14px;
   font-weight: bold;
