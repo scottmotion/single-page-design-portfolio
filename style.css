@@ -243,6 +243,12 @@ img.about-image {
   width: 4rem;
   height: 4rem;
 }
+.carousel-control-prev-icon {
+  background-image: url("assets/icon-arrow-left.svg");
+}
+.carousel-control-next-icon {
+  background-image: url("assets/icon-arrow-right.svg");
+}
 
 /* Booking Section */
 #booking-section {
