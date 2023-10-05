@@ -168,7 +168,9 @@ img.about-image {
 }
 
 /* Work Carousel */
-
+.carousel-inner {
+  margin-bottom: 2rem;
+}
 .carousel-item {
   /* width: 75%; */
   padding-inline: 1rem;
@@ -193,6 +195,8 @@ img.about-image {
   background-color: var(--black);
   border-radius: 50rem;
   position: relative;
+  width: 4rem;
+  height: 4rem;
 }
 
 /* Booking Section */
