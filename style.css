@@ -25,7 +25,20 @@ body {
 }
 
 /* Typography */
+.heading-lg {
+  font-size: clamp(2.25rem, 5.73vw, 3.5rem);
+  font-weight: 700;
+}
+.heading-md {
+  font-size: clamp(1.625rem, 4.16vw, 2.5rem);
+  font-weight: 700;
+}
+.heading-sm {
+  font-size: clamp(1.5rem, 4.16vw, 2rem);
+  font-weight: 700;
+}
 p {
+  font-size: clamp(1rem, 2.75vw, 1.125rem);
   color: var(--medium-brown);
   line-height: 26px;
 }
@@ -44,7 +57,7 @@ img.site-logo {
   max-width: fit-content;
   white-space: nowrap;
   color: var(--light-cream);
-  font-size: 14px;
+  font-size: clamp(0.875rem, 3vw, 1rem);
   font-weight: bold;
   border-radius: 50rem;
   padding-inline: 1.75rem;
@@ -91,7 +104,8 @@ header {
   padding: 1rem;
 }
 header > h1 {
-  font-size: 36px;
+  /* font-size: clamp(2.25rem, 5.73vw, 3.5rem); */
+  /* font-size: 36px; */
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -194,8 +208,8 @@ img.about-image {
   margin-bottom: 2.5rem;
 }
 #about-section h2 {
-  font-size: 26px;
-  font-weight: 700;
+  /* font-size: 26px; */
+  /* font-weight: 700; */
   margin-bottom: 1.5rem;
 }
 
@@ -205,9 +219,9 @@ img.about-image {
   padding-inline: 0px;
   margin-bottom: 4rem;
 }
-#work-section > h2 {
-  font-size: 24;
-  font-weight: 700;
+#work-section h2 {
+  /* font-size: 24; */
+  /* font-weight: 700; */
   padding-inline: 1rem;
   margin-bottom: 2rem;
 }
@@ -261,9 +275,9 @@ img.about-image {
   padding-block: 3rem;
   border-radius: 0.5rem;
 }
-#booking-div > h2 {
+#booking-div h2 {
   color: var(--light-cream);
-  font-weight: 700;
+  /* font-weight: 700; */
   margin-bottom: 1.5rem;
 }
 #booking-div > p {
