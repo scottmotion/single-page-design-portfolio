@@ -104,8 +104,6 @@ header {
   padding: 1rem;
 }
 header > h1 {
-  /* font-size: clamp(2.25rem, 5.73vw, 3.5rem); */
-  /* font-size: 36px; */
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -198,7 +196,6 @@ header > p {
 
 /* About Section */
 #about-section {
-  /* text-align: center; */
   padding: 1rem;
   margin-bottom: 4rem;
 }
@@ -208,8 +205,6 @@ img.about-image {
   margin-bottom: 2.5rem;
 }
 #about-section h2 {
-  /* font-size: 26px; */
-  /* font-weight: 700; */
   margin-bottom: 1.5rem;
 }
 
@@ -220,8 +215,6 @@ img.about-image {
   margin-bottom: 4rem;
 }
 #work-section h2 {
-  /* font-size: 24; */
-  /* font-weight: 700; */
   padding-inline: 1rem;
   margin-bottom: 2rem;
 }
@@ -234,7 +227,7 @@ img.about-image {
   /* width: 75%; */
   padding-inline: 1rem;
 }
-.carousel-item > img {
+.carousel-item img {
   border-radius: 0.5rem;
 }
 .carousel-control-wrapper {
@@ -277,10 +270,9 @@ img.about-image {
 }
 #booking-div h2 {
   color: var(--light-cream);
-  /* font-weight: 700; */
   margin-bottom: 1.5rem;
 }
-#booking-div > p {
+#booking-div p {
   color: var(--light-cream);
   margin-bottom: 1.5rem;
 }
