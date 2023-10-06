@@ -263,8 +263,12 @@ img.about-image {
   margin-bottom: 0.5rem;
 }
 #booking-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--black);
-  padding: 1.5rem;
+  padding-inline: 1.5rem;
   padding-block: 3rem;
   border-radius: 0.5rem;
 }
@@ -273,6 +277,24 @@ img.about-image {
   margin-bottom: 1.5rem;
 }
 #booking-div p {
+  max-width: 42ch;
+  text-align: center;
   color: var(--light-cream);
   margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1400px) {
+  #booking-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 3rem;
+  }
+
+  #booking-div h2 {
+    text-align: left;
+  }
+
+  #booking-div p {
+    text-align: left;
+  }
 }
