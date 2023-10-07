@@ -239,8 +239,9 @@ header p {
   margin-bottom: 4.25rem;
 }
 img.about-image {
-  width: 100%;
+  /* width: 100%; */
   max-width: 300px;
+  max-width: clamp(300px, 47.4vw, 445px);
   margin-bottom: 2.5rem;
 }
 #about-section h2,
