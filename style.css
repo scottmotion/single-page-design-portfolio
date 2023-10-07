@@ -48,7 +48,8 @@ p {
 
 /* Site Logo */
 img.site-logo {
-  width: 3rem;
+  /* width: 3rem; */
+  width: clamp(3rem, 8.5vw, 4rem);
 }
 
 /* Buttons */
@@ -62,11 +63,24 @@ img.site-logo {
   border-radius: 50rem;
   padding-inline: 1.75rem;
 }
+@media screen and (min-width: 768px) {
+  .btn {
+    height: 3.5rem;
+    padding-inline: 2.75rem;
+  }
+}
+
 .btn-black {
   background-color: var(--black);
 }
+.btn-black:hover {
+  background-color: var(--galactic-blue);
+}
 .btn-red {
   background-color: var(--light-red);
+}
+.btn-red:hover {
+  background-color: var(--summer-yellow);
 }
 
 /************/
@@ -76,13 +90,18 @@ img.site-logo {
 section {
   padding: 1rem;
 }
+@media screen and (min-width: 768px) {
+  section {
+    padding: 1rem 2.5rem;
+  }
+}
 
 nav,
 header,
 section,
 footer {
   width: 100%;
-  max-width: calc(1110px + 2rem);
+  max-width: calc(1110px + 5rem);
 }
 
 /* Nav / Footer */
@@ -94,6 +113,15 @@ footer {
   align-items: center;
   padding: 1rem;
 }
+@media screen and (min-width: 768px) {
+  nav {
+    padding: 2.125rem 2.5rem 3rem 2.5rem;
+  }
+  footer {
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
 
 /* Header */
 header {
@@ -103,11 +131,21 @@ header {
   text-align: center;
   padding: 1rem;
 }
-header > h1 {
+header h1 {
   font-weight: 700;
   margin-bottom: 1rem;
 }
-header > p {
+@media screen and (min-width: 768px) {
+  header {
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    margin-bottom: 2rem;
+  }
+  header h1 {
+    margin-bottom: 2rem;
+  }
+}
+
+header p {
   max-width: 80%;
   margin-bottom: 0px;
 }
@@ -127,6 +165,7 @@ header > p {
   #skills-section {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 11.375rem 9.875rem 11.375rem;
+    margin-bottom: 5.5rem;
   }
   #skill-1 {
     grid-row-end: span 2;
@@ -196,7 +235,7 @@ header > p {
 
 /* About Section */
 #about-section {
-  padding: 1rem;
+  /* padding: 1rem; */
   margin-bottom: 4.25rem;
 }
 img.about-image {
@@ -263,6 +302,12 @@ img.about-image {
   text-align: center;
   margin-bottom: 0.5rem;
 }
+@media screen and (min-width: 768px) {
+  #booking-section {
+    margin-bottom: 1.5rem;
+  }
+}
+
 #booking-div {
   display: flex;
   flex-direction: column;
