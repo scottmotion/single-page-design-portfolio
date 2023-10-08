@@ -72,17 +72,14 @@
       </div>
     </section>
 
-    <section
-      id="about-section"
-      class="row text-center text-md-start justify-between align-items-center"
-    >
+    <section id="about-section" class="row justify-between align-items-center">
       <div
         class="col-md-5 p-0 d-flex justify-content-center justify-content-md-end justify-content-xl-start"
       >
         <img src="assets/image-amy.webp" class="about-image mb-md-0" />
       </div>
-      <div class="col-0 col-md-1"></div>
-      <div class="col-md-6 p-0">
+      <div class="col-1"></div>
+      <div class="col-md-6 p-0 text-center text-md-start">
         <h2 class="heading-md">
           I’m Amy, and I’d love to work on your next project
         </h2>
@@ -135,55 +132,17 @@
 
     <footer>
       <img src="assets/logo.svg" class="site-logo" />
-
       <button type="button" class="btn btn-black">Free Consultation</button>
     </footer>
 
     <script type="text/javascript" src="jquery/jquery-3.7.1.min.js"></script>
+
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
 
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(".work-carousel").slick({
-          arrows: true,
-          centerMode: true,
-          centerPadding: "360px",
-          initialSlide: 2,
-          slidesToShow: 1,
-          variableWidth: true,
-          responsive: [
-            // {
-            //   breakpoint: 1400,
-            //   settings: {
-            //     centerMode: true,
-            //     slidesToShow: 1,
-            //     variableWidth: true,
-            //   },
-            // },
-
-            {
-              breakpoint: 768,
-              settings: {
-                centerPadding: "44px",
-                variableWidth: false,
-              },
-            },
-            // {
-            //   breakpoint: 376,
-            //   settings: {
-            //     centerMode: true,
-            //     centerPadding: "44px",
-            //     slidesToShow: 1,
-            //     variableWidth: false,
-            //   },
-            // },
-          ],
-        });
-      });
-    </script>
+    <script src="./slider.js"></script>
 
     <script src="./bootstrap-5.3.2-dist//js/bootstrap.bundle.min.js"></script>
   </body>
