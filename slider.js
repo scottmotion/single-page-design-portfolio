@@ -6,6 +6,8 @@ $(document).ready(function () {
     initialSlide: 2,
     slidesToShow: 1,
     variableWidth: true,
+    prevArrow: $(".slider-arrow-prev"),
+    nextArrow: $(".slider-arrow-next"),
     responsive: [
       // {
       //   breakpoint: 1400,
