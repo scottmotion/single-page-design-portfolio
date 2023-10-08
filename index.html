@@ -23,6 +23,12 @@
 
     <link href="style.css" rel="stylesheet" />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
     <title>Single-page design portfolio</title>
   </head>
 
@@ -92,67 +98,23 @@
     <section id="work-section">
       <h2 class="heading-sm">My Work</h2>
 
-      <!-- Carousel Start -->
-      <div id="carouselWork" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item">
-            <img
-              src="assets/image-slide-1.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="assets/image-slide-2.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item active">
-            <img
-              src="assets/image-slide-3.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="assets/image-slide-4.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="assets/image-slide-5.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-          </div>
+      <div class="work-carousel">
+        <div>
+          <img src="assets/image-slide-1.jpg" alt="..." />
         </div>
-        <div class="carousel-control-wrapper">
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselWork"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselWork"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        <div>
+          <img src="assets/image-slide-2.jpg" alt="..." />
+        </div>
+        <div>
+          <img src="assets/image-slide-3.jpg" alt="..." />
+        </div>
+        <div>
+          <img src="assets/image-slide-4.jpg" alt="..." />
+        </div>
+        <div>
+          <img src="assets/image-slide-5.jpg" alt="..." />
         </div>
       </div>
-      <!-- Carousel End -->
     </section>
 
     <section id="booking-section">
@@ -176,6 +138,52 @@
 
       <button type="button" class="btn btn-black">Free Consultation</button>
     </footer>
+
+    <script type="text/javascript" src="jquery/jquery-3.7.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".work-carousel").slick({
+          arrows: true,
+          centerMode: true,
+          centerPadding: "360px",
+          initialSlide: 2,
+          slidesToShow: 1,
+          variableWidth: true,
+          responsive: [
+            // {
+            //   breakpoint: 1400,
+            //   settings: {
+            //     centerMode: true,
+            //     slidesToShow: 1,
+            //     variableWidth: true,
+            //   },
+            // },
+
+            {
+              breakpoint: 768,
+              settings: {
+                centerPadding: "44px",
+                variableWidth: false,
+              },
+            },
+            // {
+            //   breakpoint: 376,
+            //   settings: {
+            //     centerMode: true,
+            //     centerPadding: "44px",
+            //     slidesToShow: 1,
+            //     variableWidth: false,
+            //   },
+            // },
+          ],
+        });
+      });
+    </script>
 
     <script src="./bootstrap-5.3.2-dist//js/bootstrap.bundle.min.js"></script>
   </body>

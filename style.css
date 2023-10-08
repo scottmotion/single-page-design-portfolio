@@ -254,48 +254,29 @@ img.about-image {
   text-align: center;
   padding-inline: 0px;
   margin-bottom: 4.25rem;
+  max-width: unset;
 }
 #work-section h2 {
   padding-inline: 1rem;
   margin-bottom: 2rem;
 }
 
-/* Work Carousel */
-.carousel-inner {
-  margin-bottom: 2rem;
-}
-.carousel-item {
-  /* width: 75%; */
-  padding-inline: 1rem;
-}
-.carousel-item img {
-  border-radius: 0.5rem;
-}
-.carousel-control-wrapper {
-  display: flex;
+/* Work - Slick Slider */
+.slick-track {
+  display: flex !important;
   flex-direction: row;
-  justify-content: center;
   gap: 1rem;
-  margin-top: 1rem;
 }
-.carousel-control-next,
-.carousel-control-prev {
-  position: relative;
-  width: unset;
+@media screen and (min-width: 768px) {
+  .slick-track {
+    gap: 1.5rem;
+  }
 }
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-  background-color: var(--black);
-  border-radius: 50rem;
-  position: relative;
-  width: 4rem;
-  height: 4rem;
-}
-.carousel-control-prev-icon {
-  background-image: url("assets/icon-arrow-left.svg");
-}
-.carousel-control-next-icon {
-  background-image: url("assets/icon-arrow-right.svg");
+
+.slick-slide img {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
 }
 
 /* Booking Section */
