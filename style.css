@@ -23,6 +23,16 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 500;
 }
+@media screen and (min-width: 768px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+@media screen and (min-width: 1400px) {
+  body {
+    background-color: lightblue;
+  }
+}
 
 /* Typography */
 .heading-lg {
@@ -161,9 +171,6 @@ header p {
   margin-bottom: 4.25rem;
 }
 @media screen and (min-width: 768px) {
-  body {
-    background-color: lightgreen;
-  }
   #skills-section {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 11.375rem 9.875rem 11.375rem;
@@ -174,9 +181,6 @@ header p {
   }
 }
 @media screen and (min-width: 1400px) {
-  body {
-    background-color: lightblue;
-  }
   #skills-section {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 11.375rem 9.875rem;
@@ -305,12 +309,6 @@ img.about-image {
 .slider-arrow-prev:hover,
 .slider-arrow-next:hover {
   background-color: var(--galactic-blue);
-}
-.slider-arrow-prev {
-}
-.slider-arrow-next {
-}
-.slider-arrow-icon {
 }
 
 /* Booking Section */
