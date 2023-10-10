@@ -241,8 +241,18 @@ header p {
 
 /* About Section */
 #about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 4.25rem;
 }
+@media screen and (min-width: 768px) {
+  #about-section {
+    flex-direction: row;
+  }
+}
+
 img.about-image {
   max-width: 300px;
   max-width: clamp(300px, 47.4vw, 445px);
