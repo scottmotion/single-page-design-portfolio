@@ -78,7 +78,7 @@ img.site-logo {
 @media screen and (min-width: 768px) {
   .btn {
     height: 3.5rem;
-    padding-inline: 2.75rem;
+    padding-inline: 2.85rem;
   }
 }
 
@@ -257,6 +257,11 @@ img.about-image {
   max-width: 300px;
   max-width: clamp(300px, 47.4vw, 445px);
   margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  img.about-image {
+    margin-bottom: 0;
+  }
 }
 #about-section h2,
 #about-section p {
