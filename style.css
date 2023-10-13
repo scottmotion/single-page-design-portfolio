@@ -164,7 +164,7 @@ header h1 {
 }
 
 header p {
-  max-width: 80%;
+  max-width: min(54ch, 80%);
   margin-bottom: 0px;
 }
 
