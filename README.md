@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://scottmotion.github.io/single-page-design-portfolio/)
+- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Live Site URL: [GitHub Pages](https://scottmotion.github.io/single-page-design-portfolio/)
 
 ## My process
 
