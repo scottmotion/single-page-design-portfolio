@@ -391,6 +391,7 @@ img.about-image {
     flex-direction: row;
     justify-content: space-between;
     padding-inline: 3rem;
+    padding-block: 5rem;
   }
 
   #booking-div h2 {
