@@ -169,15 +169,16 @@ header p {
 }
 
 /* Skills Section */
-#skills-section {
+.skills-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 22.75rem 11.375rem 9.875rem 11.375rem 11.375rem;
   gap: 1.5rem;
   margin-bottom: 4.25rem;
+  user-select: none;
 }
 @media screen and (min-width: 768px) {
-  #skills-section {
+  .skills-section {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 11.375rem 9.875rem 11.375rem;
     margin-bottom: 5.5rem;
@@ -187,7 +188,7 @@ header p {
   }
 }
 @media screen and (min-width: 1400px) {
-  #skills-section {
+  .skills-section {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 11.375rem 9.875rem;
   }
@@ -217,7 +218,7 @@ header p {
   top: 1.5rem;
   right: 1.5rem;
 }
-.skill-div > h2 {
+.skill-div h2 {
   font-size: 24px;
   font-weight: 700;
   margin: 0;
@@ -247,30 +248,30 @@ header p {
 
 /* About Section */
 
-#about-section {
+.about-section {
   display: grid;
   grid-template-columns: 1fr;
   margin-bottom: 4.25rem;
 }
 @media screen and (min-width: 768px) {
-  #about-section {
+  .about-section {
     display: grid;
     grid-template-columns: 50% 50%;
   }
 }
 
-#aboutImageDiv {
+.about-image-div {
   display: flex;
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
-  #aboutImageDiv {
+  .about-image-div {
     justify-content: flex-end;
     margin-right: 4rem;
   }
 }
 @media screen and (min-width: 1100px) {
-  #aboutImageDiv {
+  .about-image-div {
     justify-content: flex-start;
     margin-right: 4rem;
   }
@@ -287,7 +288,7 @@ img.about-image {
   }
 }
 
-#aboutContentDiv {
+.about-content-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -296,14 +297,14 @@ img.about-image {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  #aboutContentDiv {
+  .about-content-div {
     align-items: flex-start;
     text-align: unset;
   }
 }
 
 /* Work */
-#work-section {
+.work-section {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -313,11 +314,11 @@ img.about-image {
   max-width: unset;
 }
 @media screen and (min-width: 768px) {
-  #work-section {
+  .work-section {
     gap: 3.5rem;
   }
 }
-#work-section h2 {
+.work-section-heading {
   padding-inline: 1rem;
   margin-bottom: 0;
 }
@@ -361,17 +362,17 @@ img.about-image {
 }
 
 /* Booking Section */
-#booking-section {
+.booking-section {
   text-align: center;
   margin-bottom: 0.5rem;
 }
 @media screen and (min-width: 768px) {
-  #booking-section {
+  .booking-section {
     margin-bottom: 1.5rem;
   }
 }
 
-#booking-div {
+.booking-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -381,18 +382,18 @@ img.about-image {
   padding-block: 3rem;
   border-radius: 0.5rem;
 }
-#booking-div h2 {
+.booking-div h2 {
   color: var(--light-cream);
   margin-bottom: 1.5rem;
 }
-#booking-div p {
+.booking-div p {
   max-width: 42ch;
   text-align: center;
   color: var(--light-cream);
   margin-bottom: 1.5rem;
 }
 @media screen and (min-width: 1400px) {
-  #booking-div {
+  .booking-div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -400,11 +401,11 @@ img.about-image {
     padding-block: 5rem;
   }
 
-  #booking-div h2 {
+  .booking-div h2 {
     text-align: left;
   }
 
-  #booking-div p {
+  .booking-div p {
     text-align: left;
   }
 }
